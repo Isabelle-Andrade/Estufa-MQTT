@@ -8,5 +8,5 @@ router.register(r'leituras', LeituraViewSet)
 router.register(r'alertas', AlertaViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]
